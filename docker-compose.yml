@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: react_app
+    build:
+      context: ./project
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: always
